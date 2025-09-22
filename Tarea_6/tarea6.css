@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(to bottom, rgb(201, 128, 207), rgb(79, 202, 211));
+  min-height: 100vh;
+}
+
+.divNumero {
+  height: 50px;
+  width: 70px;
+  background-color: #73eff0;
+  border: solid #eb21b6;
+  box-shadow: 0 0 20px #32a1c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: grab;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.botonNumero {
+  height: 60px;
+  width: 120px;
+  background-color: #73eff0;
+  border: solid #eb21b6;
+  box-shadow: 0 0 20px #32a1c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.botonNumero:hover {
+  transform: scale(1.05);
+  background-color: #5fd3d9;
+}
+
+.dropzone {
+  height: 300px;
+  width: 400px;
+  background-color: #73eff0;
+  border: solid #eb21b6;
+  box-shadow: 0 0 40px #32a1c6;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropzone.win {
+  border-color: #a9f7c4;
+  box-shadow: 0 0 40px #5dd478;
+  background: linear-gradient(to bottom, white, green);
+}
+
+.dropzone.lose {
+  border-color: darkred;
+  box-shadow: 0 0 40px #efabcb;
+  background: linear-gradient(to bottom, white, red);
+}
